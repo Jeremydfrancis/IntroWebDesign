@@ -12,37 +12,57 @@ Place all of your files in a folder, and zip that folder. Then submit the .zip f
 <html>
   <head>
     <title>Japan | Your Global Travel Guide</title>
-    <style>
-      body {
-        max-width: 1200px;
-        margin: 0;
-        padding: 20px;
-        width: 90%;
-      }
-      .navBar {
-        display: flex;
-        text-align: center;
-        justify-items: center;
-        justify-content: space-evenly;
-      }
-      .logo-title {
-        font-weight: bold;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="navBar">
-      <div>
-        <a href="home.html">
+    <header >
+      <div class="navBar">
+         <div>
+        <a href="index.html">
           <span class="world-logo">🌍</span class="logo-title">
-          <span>Discover World</span>
+          <span class="logo-text">DiscoverWorld</span>
         </a>
       </div>
-      
-        <a href="home.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="japan.html">Japan</a>
         <a href="italy.html">Italy</a>
         <a href="argentina.html">Argentina</a>
+      </div>
     </header>
+    <div class ="hero-section hero-japan" >
+      <h1>Discover Japan</h1>
+      <p>Plan your next vacation to Japan now</p>
+    </div>
+    <main class = "main-content">
+      <article class = "main-parent">
+        <div class="main-children">
+          <div>
+            <h3>About Japan</h3>
+            <p> Japan is an island nation located in East Asia. It is known for its
+                rich culture, advanced technology, delicious cuisine, and beautiful
+                natural landscapes. From modern cities like Tokyo to peaceful temples
+                and mountains, Japan offers a unique travel experience.</p>
+          </div>
+          <img src="public/japanMap.png" alt="Japan Map" width="1200px">
+          <div>
+            <h3>Map of Japan</h3>
+            <p>Japan is made up of four main islands: Honshu, Hokkaido, Kyushu,
+               and Shikoku. It is located in the Pacific Ocean and is close to
+               countries such as China and South Korea.</p>
+          </div>
+        </div>
+      </article>
+      <article class = "main-parent">
+        <div class="main-children">
+          <img src="public/mountfuji.png" alt="Mount Fuji" width="1200px">
+          <div>          
+            <h3>Mount Fuji</h3>
+            <p>Mount Fuji is Japan’s tallest mountain and one of the most
+               famous landmarks in the country. Many tourists visit each year
+               to hike the mountain or take photos of its beautiful snow-capped peak.
+            </p>
+          </div>
+        </div>
+        </article>
   </body>
 </html>

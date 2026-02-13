@@ -1,0 +1,56 @@
+<!-- Create a multi-page web site for a Tourism Site.
+Your Home Page should include 3 links to location pages you will create.
+For each of the 3 location pages include:
+a link back to the home page
+a picture of the flag
+a picture of the map
+a picture of a tourist destination
+Use basic CSS (for extra credit)
+Place all of your files in a folder, and zip that folder. Then submit the .zip file. -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>Discover World | Your Global Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header >
+      <div class="navBar">
+         <div>
+        <a href="index.html">
+          <span class="world-logo">🌍</span class="logo-title">
+          <span class="logo-text">DiscoverWorld</span>
+        </a>
+      </div>
+        <a href="index.html">Home</a>
+        <a href="japan.html">Japan</a>
+        <a href="italy.html">Italy</a>
+        <a href="argentina.html">Argentina</a>
+      </div>
+    </header>
+    <div class ="hero-section hero-home" >
+      <h1>Discover Your Dream Destination</h1>
+      <p>Explore amazing destinations across the globe</p>
+    </div>
+    <main class = "main-content">
+      <section>
+        <h2>Looking to explore?</h2>
+        <p>We have a wide range of locations for you to plan your next vacation!</p>
+      </section>
+      <article class = "locations-parent">
+        <div class="locations-children">
+          <a href="japan.html">
+            <img src="public/flag-japan.png" alt="Japan Sticker"/><p>Japan</p>
+          </a>
+          <a href="italy.html">
+            <img src="public/flag-italy.png" alt="Italy Sticker"/><p>Italy</p>
+          </a>
+          <a href="argentina.html">
+            <img src="public/flag-argentina.png" alt="Argentina Sticker"/><p>Argentina</p>
+          </a>
+        </div>
+        </article>
+    </main>
+  </body>
+</html>
