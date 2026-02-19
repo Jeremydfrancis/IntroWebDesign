@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Navbar Practice</title>
+      <style>
+            body {
+                  margin: 0;
+                  background-color:#0b1220 ;
+            }
+            nav {
+                  width: 100vw;
+                  margin: 0;
+                  padding: 1rem;
+                  background-color: rgba(118, 171, 255, 0.35);       
+            }
+            .navbar {
+                  list-style-type: none ;
+                  margin: 0;
+                  padding: 0;
+                  display: flex;
+                  justify-content: space-evenly;
+            }
+            ul {
+                  overflow: hidden;
+                  text-align: center;
+            }
+            .navbar li a {
+                  display: block;
+                  color: #e8eefc;
+                  padding: 14px;
+                  text-decoration: none;
+                  font-weight: bold;
+                  letter-spacing: 1.5px;
+                  font-family: Verdana, Tahoma, sans-serif;
+                  font-size: 1rem;
+
+            }
+            .navbar li a:hover {
+                  color: #a9b6d8;
+            }
+            .active {
+                  color: red!important;
+            }
+      </style>
+</head>
+<body>
+<nav>
+      <ul class="navbar">
+            <div><p>Hello</p></div>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+      </ul>
+</nav>
+</body>
+</html>
