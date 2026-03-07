@@ -1,0 +1,83 @@
+/* earlyWeb.css */
+main * {
+  all: revert;
+}
+
+main {
+  background-color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: #000000;
+  max-width: 1200px;
+  margin: 14px auto;
+  padding: clamp(1rem, 3vw, 2.5rem) clamp(1.5rem, 4vw, 3rem);
+  outline: 6px solid oklch(60.5% 0.178 38.5);
+  outline-offset: -6px;
+}
+
+@media (max-width: 1240px) {
+  main {
+    margin: 24px clamp(1rem, 2vw + 0.5rem, 3rem);
+  }
+}
+main h1,
+p,
+h2 {
+  padding: 0.5rem 0;
+  margin: 0;
+}
+main hr {
+  color: black !important;
+  z-index: 999;
+  border: none;
+  border-top: 1px solid #000000;
+  margin: 1rem 0;
+}
+main a {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+main a:visited {
+  color: #551a8b;
+}
+main img,
+iframe {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid black;
+}
+.early-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+}
+.early-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 65ch;
+  text-wrap: balance;
+}
+main table {
+  border-collapse: collapse;
+  width: 100%;
+}
+main th,
+main td {
+  border: 2px solid #000000;
+  padding: 6px 10px;
+  text-align: left;
+}
+main th {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+@media (max-width: 1240px) {
+  .early-main {
+    padding: 0 clamp(1rem, 2vw + 0.5rem, 3rem) !important;
+  }
+  .early-content {
+    padding: clamp(0.5rem, 1vw + 0.2rem, 1rem) clamp(1rem, 2vw + 0.5rem, 3rem);
+  }
+}
