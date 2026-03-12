@@ -18,7 +18,6 @@
         </label>
 
         <ul class="menu">
-          <li><a href="index.html">Home</a></li>
           <li><a href="earlyWeb.html">Early Web</a></li>
           <li><a href="css.html">CSS & JavaScript</a></li>
           <li><a href="serverSide.html">Server-Side</a></li>
@@ -28,5 +27,286 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section class="content-grid-hero">
+        <div class="hero-grid-child-1">
+          <h1>
+            <span class="highlight-text">Server-Side Programming</span>: The Web
+            Gets A Brain
+          </h1>
+          <p class="sub-text">
+            How servers began generating dynamic content, transforming the web
+            into applications.
+          </p>
+        </div>
+        <div class="hero-grid-child-2">
+          <img
+            src="public/worlds_first_web_server.jpg"
+            alt="World's First Web Server"
+            class="darken-image"
+          />
+          <p class="sub-text center-text">
+            World's first web server
+            <a href="references.html" class="cite">[3]</a>
+          </p>
+        </div>
+      </section>
+      <section class="content-grid">
+        <div class="content-grid-child-1">
+          <img
+            src="public/rasmus-lerdorf.jpg"
+            alt=""
+            class="php-img darken-image"
+          />
+          <p class="sub-text center-text">
+            Rasmus Lerdorf - Creator of PHP
+            <a href="references.html" class="cite">[4]</a>
+          </p>
+        </div>
+        <div class="content-grid-child-2">
+          <h3>
+            <span class="highlight-text">The Problem</span> with Static Websites
+          </h3>
+          <p>
+            Every time you visited a website you would have to load the web
+            server which would be hosting an HTML file. So to build a site with
+            500 unique pages, you would have to write all 500 pages of HTML.
+            There was no dynamic content. You could not store user information
+            between requests as there was no session tracking of requests. All
+            you could do was serve up the HTML that the web developer put into
+            the file on the server. The user could input only what the web
+            developer decided to put into input fields. As a result every user
+            would get an exact replica of the page that the web site served up.
+            No personalization and no search results were relevant.
+          </p>
+          <p>
+            The first sites were built using static HTML pages. They worked just
+            fine for informational sites. Then the web changed and more people
+            started to consider the web as a system that could change the world.
+            Suddenly there was e-commerce sites, college portal sites, and news
+            sites that needed to be updated in real time. None of this was
+            possible to do with static HTML and now we needed to build a server
+            side application that can listen to HTTP requests, interact with a
+            database, build web pages from data and then send it off to the web
+            browser for the client to render.
+          </p>
+        </div>
+      </section>
+      <section class="parent-grid">
+        <div class="child-1">
+          <h2>The <span class="highlight-text">Arrival of CGI & Perl</span></h2>
+        </div>
+        <div class="child-2">
+          <h4>First Way To Generate Pages Dynamically</h4>
+          <p>
+            The first answer to the static web problem was the Common Gateway
+            Interface (CGI), which was introduced in 1993.<a
+              href="references.html"
+              class="cite"
+              >[1]</a
+            >
+            In the early days of the web, a script could be written in a
+            language such as Perl, C or C++ that was invoked by a CGI program on
+            the web server. The script would gather the input from the web page,
+            process that information and then output a new web page.
+          </p>
+          <p>
+            Perl was the common language for CGI scripting due to its text
+            handling abilities. As a result a lot of e-commerce sites,
+            guestbooks and search forms were made with CGI scripts written in
+            Perl. The reason for this was that for each request to the web
+            server, the web server would start a new process to carry out the
+            instructions given in the script. As a result, scripts written in
+            Perl would take a very long time to carry out an action and were
+            also a huge drain on resources of the web server.
+          </p>
+          <p class="sub-text">
+            Another reason why using Perl as a programming language is a bad
+            idea is because it is very hard to understand and is thus very hard
+            to modify the code. Most programmers would agree that Perl is a
+            "write only language" and is very hard to decipher and modify.
+          </p>
+        </div>
+      </section>
+      <section class="parent-grid">
+        <div class="child-1">
+          <h2>The <span class="highlight-text">Arrival of PHP</span></h2>
+        </div>
+        <div class="child-2">
+          <h4>Server-Side Accesible For Everyone</h4>
+          <p>
+            PHP stands for “Personal Home Page”. It was originally created by
+            Rasmus Lerdorf, a Danish-Canadian computer programmer, in 1994 as a
+            set of small programs to keep track of visits to his home page.<a
+              href="references.html"
+              class="cite"
+              >[2]</a
+            >
+            He wanted to develop something new for the web, something more like
+            Perl but able to be included directly in HTML. So PHP was developed.
+          </p>
+          <p>
+            PHP is a programming language which grew popular in the late 1990s
+            and early 2000s. The WordPress platform and a large portion of
+            Facebook’s original website were built using this language. Many
+            small businesses would choose to use PHP for their websites because
+            it was free, open-source, easy to learn and to implement for web
+            development. This meant that a large population of web developers
+            would begin their careers using PHP, eventually moving on to more
+            advanced and complex programming languages.
+          </p>
+          <p class="sub-text">
+            At its peak in the mid-2000s, PHP was used on over 20 million
+            websites, more than any other server-side programming language.
+          </p>
+        </div>
+      </section>
+      <section class="timeline-table">
+        <div class="timeline-card">
+          <h2>Timeline of Events</h2>
+          <div class="timeline-grid">
+            <div class="timeline-grid-children">
+              <h4>1991</h4>
+              <ul>
+                <li>
+                  Tim Berners-Lee sets up the first web server at CERN, serving
+                  only static HTML files
+                </li>
+              </ul>
+            </div>
+
+            <div class="timeline-grid-children">
+              <h4>1993</h4>
+              <ul>
+                <li>
+                  The NCSA HTTPd server is released as the first web server to
+                  support the Common Gateway Interface (CGI)
+                </li>
+              </ul>
+            </div>
+            <div class="timeline-grid-children">
+              <h4>1994</h4>
+              <ul>
+                <li>
+                  Rasmus Lerdorf writes PHP as a small set of Perl scripts to
+                  track visits to his personal homepage
+                </li>
+                <li>
+                  Michael Widenius creates MySQL, a fast open-source database
+                  server ideally suited for high-performance websites
+                </li>
+              </ul>
+            </div>
+            <div class="timeline-grid-children">
+              <h4>1995</h4>
+              <ul>
+                <li>
+                  The Apache HTTP Server project launches and within a few years
+                  becomes the most popular web server in the world
+                </li>
+                <li>
+                  Perl CGI scripts enable the first wave of e-commerce sites and
+                  interactive online forms
+                </li>
+              </ul>
+            </div>
+            <div class="timeline-grid-children">
+              <h4>1996</h4>
+              <ul>
+                <li>
+                  Microsoft announces Active Server Pages (ASP), allowing
+                  server-side scripting on any Windows server
+                </li>
+                <li>
+                  PHP 2.0 is released, adding database support and making PHP a
+                  serious development tool
+                </li>
+              </ul>
+            </div>
+            <div class="timeline-grid-children">
+              <h4>1997</h4>
+              <ul>
+                <li>
+                  PHP 3.0 is released, a complete rewrite in C that dramatically
+                  improved performance and reliability
+                </li>
+                <li>Apache captures over 50% of the web server market</li>
+              </ul>
+            </div>
+            <div class="timeline-grid-children">
+              <h4>1998</h4>
+              <ul>
+                <li>
+                  PHP 3.0 gains widespread adoption, powering thousands of
+                  dynamic websites globally
+                </li>
+              </ul>
+            </div>
+            <div class="timeline-grid-children">
+              <h4>2000</h4>
+              <ul>
+                <li>
+                  PHP 4.0 is released with major performance improvements and
+                  session support
+                </li>
+              </ul>
+            </div>
+            <div class="timeline-grid-children">
+              <h4>2004</h4>
+              <ul>
+                <li>
+                  PHP 5.0 introduces full object-oriented programming support
+                </li>
+                <li>
+                  Ruby on Rails is released by David Heinemeier Hansson,
+                  introducing the Model-View-Controller pattern and changing how
+                  developers approached server-side architecture
+                </li>
+              </ul>
+            </div>
+            <div class="timeline-grid-children">
+              <h4>2008</h4>
+              <ul>
+                <li>
+                  Facebook, still heavily built on PHP, becomes the largest
+                  social network in the world showing a testament to PHP's scale
+                </li>
+                <li>
+                  Server-side JavaScript begins gaining traction ahead of
+                  Node.js
+                </li>
+              </ul>
+            </div>
+            <div class="timeline-grid-children">
+              <h4>2009</h4>
+              <ul>
+                <li>
+                  Ryan Dahl releases Node.js, bringing JavaScript from the
+                  browser to the server for the first time
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="maintain">
+        <ul class="menu-footer">
+          <li><a href="earlyWeb.html">Early Web</a></li>
+          <li><a href="css.html">CSS & JavaScript</a></li>
+          <li><a href="serverSide.html">Server-Side</a></li>
+          <li><a href="frameworks.html">Frameworks </a></li>
+          <li><a href="modernWeb.html">Modern Web</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+        <div class="footer-head">
+          <a href="index.html" class="logo-text"
+            ><img src="public/Untitled design.svg" alt="" srcset=""
+          /></a>
+          <p>©Copyright 2026 Jeremy Francis</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
